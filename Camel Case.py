@@ -1,3 +1,9 @@
+def displayBanner():
+    msg = 'AWESOME camelCaseGenerator PROGRAM'
+    stars = '*' * len(msg)
+    print('\n',stars ,'\n', msg, '\n', stars,'\n')
+
+displayBanner()
 text = str(input("Enter sentence to be turned into camel case:\n"))
 text = text.lower()
 textList = text.split(" ")
@@ -16,3 +22,4 @@ for element in textList:
 
 text2 = text2[0].lower() + text2[1:]
 print(text2)
+
